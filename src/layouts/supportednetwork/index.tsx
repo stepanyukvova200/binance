@@ -1,5 +1,6 @@
 import { Button } from '@mui/material'
 import './style.css'
+import { getAssetPath } from '../../utils/assets'
 
 export const SupportedNetworks = () => {
   return (
@@ -9,14 +10,14 @@ export const SupportedNetworks = () => {
         Connect your wallet via WalletConnect to securely receive your payment.
       </span>
       <div className='supported-network-list'>
-        <img src='/supported-network-list-1.png' alt='supported-network-list-1' />
-        <img src='/supported-network-list-2.png' alt='supported-network-list-2' />
+        <img src={getAssetPath('/supported-network-list-1.png')} alt='supported-network-list-1' />
+        <img src={getAssetPath('/supported-network-list-2.png')} alt='supported-network-list-2' />
       </div>
 
       <div className="supported-network-program-duration">
-        <img className='supported-network-program-duration-background' src='/program-duration-background.svg' alt='supported-network-program-duration' />
+        <img className='supported-network-program-duration-background' src={getAssetPath('/program-duration-background.svg')} alt='supported-network-program-duration' />
         
-        <img className='supported-network-program-duration-icon' src='/program-duration-icon.svg' alt='supported-network-program-duration-icon' />
+        <img className='supported-network-program-duration-icon' src={getAssetPath('/program-duration-icon.svg')} alt='supported-network-program-duration-icon' />
         <div className="supported-network-program-duration-content">          
           <h4>
             Program Duration

@@ -1,9 +1,10 @@
 import './style.css'
+import { getAssetPath } from '../../utils/assets'
 
 export const Disclaimer = () => {
   return (
     <div className='disclaimer'>
-      <img className='disclaimer-background' src='/disclaimer-background.png' alt='disclaimer-background' />
+      <img className='disclaimer-background' src={getAssetPath('/disclaimer-background.png')} alt='disclaimer-background' />
       <div className='disclaimer-content'>
         <h2>Disclaimer</h2>
         <span className='text-m disclaimer-content-text'>
@@ -15,7 +16,7 @@ export const Disclaimer = () => {
           contracts.
         </span>
       </div>
-      <img className='disclaimer-logo' src='/disclaimer-logo.png' alt='disclaimer-logo' />
+      <img className='disclaimer-logo' src={getAssetPath('/disclaimer-logo.png')} alt='disclaimer-logo' />
     </div>
   )
 }

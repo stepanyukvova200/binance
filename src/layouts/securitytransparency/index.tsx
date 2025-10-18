@@ -3,6 +3,7 @@ import { Input } from "@mui/material"
 import { useState } from "react"
 import './style.css'
 import { validateWalletAddress } from './validation'
+import { getAssetPath } from '../../utils/assets'
 
 export const SecurityTransparency = () => {
   const [walletAddress, setWalletAddress] = useState<string>('')
@@ -26,7 +27,7 @@ export const SecurityTransparency = () => {
   }
   return (
     <div className='security-transparency'>
-      <img src='/security-transparency.png' alt='security-transparency' />
+      <img src={getAssetPath('/security-transparency.png')} alt='security-transparency' />
 
       <h2>Security & Transparency</h2>
       <span className='text-m security-transparency-content-1'>
@@ -63,7 +64,7 @@ export const SecurityTransparency = () => {
       {validationStatus === 'correct' && (
         <div className="security-transparency-result">
           <div className="security-transparency-result-field correct">
-            <img src='/correct-icon.svg' alt='correct' />
+            <img src={getAssetPath('/correct-icon.svg')} alt='correct' />
             <span className="text-s correct-text">Your address has been verified.</span>
           </div>
           <span className="text-m">You are eligible to receive a compensation payout of <br/>
@@ -77,7 +78,7 @@ export const SecurityTransparency = () => {
       {validationStatus === 'incorrect' && (
         <div className="security-transparency-result">
           <div className="security-transparency-result-field incorrect">
-            <img src='/error-icon.svg' alt='error' />
+            <img src={getAssetPath('/error-icon.svg')} alt='error' />
               <span className="text-s incorrect-text">Not Eligible for Compensation</span>
           </div>
             <span className="text-m">Your wallet address is not included in the current compensation list.</span>

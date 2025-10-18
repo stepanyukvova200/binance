@@ -1,5 +1,6 @@
 import { useState } from "react"
 import './style.css'
+import { getAssetPath } from '../../utils/assets'
 
 export const FAQ = () => {
   const [faqOpen, setFaqOpen] = useState<string[]>([])
@@ -21,7 +22,7 @@ export const FAQ = () => {
       }}>
         <div className="faq-element-title">
           <h4>Can I claim compensation more than once?</h4>
-          <img className={faqOpen.includes('1') ? 'faq-element-title-arrow-open' : 'faq-element-title-arrow-close'} src='/arrow.svg' alt='arrow' />
+          <img className={faqOpen.includes('1') ? 'faq-element-title-arrow-open' : 'faq-element-title-arrow-close'} src={getAssetPath('/arrow.svg')} alt='arrow' />
         </div>
         {faqOpen.includes('1') && (
           <span className="text-m faq-element-content">
@@ -37,7 +38,7 @@ export const FAQ = () => {
       }}>
         <div className="faq-element-title">
           <h4>Who is eligible for compensation?</h4>
-          <img className={faqOpen.includes('2') ? 'faq-element-title-arrow-open' : 'faq-element-title-arrow-close'} src='/arrow.svg' alt='arrow' />
+          <img className={faqOpen.includes('2') ? 'faq-element-title-arrow-open' : 'faq-element-title-arrow-close'} src={getAssetPath('/arrow.svg')} alt='arrow' />
         </div>
         {faqOpen.includes('2') && (
           <span className="text-m">
@@ -53,7 +54,7 @@ export const FAQ = () => {
       }}>
         <div className="faq-element-title">
           <h4>Why BNB and USDT (TRC-20)?</h4>
-          <img className={faqOpen.includes('3') ? 'faq-element-title-arrow-open' : 'faq-element-title-arrow-close'} src='/arrow.svg' alt='arrow' />
+          <img className={faqOpen.includes('3') ? 'faq-element-title-arrow-open' : 'faq-element-title-arrow-close'} src={getAssetPath('/arrow.svg')} alt='arrow' />
         </div>
         {faqOpen.includes('3') && (
           <span className="text-m">
@@ -69,7 +70,7 @@ export const FAQ = () => {
       }}>
         <div className="faq-element-title">
           <h4>Can I receive funds to a different wallet?</h4>
-          <img className={faqOpen.includes('4') ? 'faq-element-title-arrow-open' : 'faq-element-title-arrow-close'} src='/arrow.svg' alt='arrow' />
+          <img className={faqOpen.includes('4') ? 'faq-element-title-arrow-open' : 'faq-element-title-arrow-close'} src={getAssetPath('/arrow.svg')} alt='arrow' />
         </div>
         {faqOpen.includes('4') && (
           <span className="text-m">
@@ -85,7 +86,7 @@ export const FAQ = () => {
       }}>
         <div className="faq-element-title">
           <h4>How long does it take to receive the payout?</h4>
-          <img className={faqOpen.includes('5') ? 'faq-element-title-arrow-open' : 'faq-element-title-arrow-close'} src='/arrow.svg' alt='arrow' />
+          <img className={faqOpen.includes('5') ? 'faq-element-title-arrow-open' : 'faq-element-title-arrow-close'} src={getAssetPath('/arrow.svg')} alt='arrow' />
         </div>
         {faqOpen.includes('5') && (
           <span className="text-m">
@@ -101,7 +102,7 @@ export const FAQ = () => {
       }}>
         <div className="faq-element-title">
           <h4>What happens if I missed the program deadline?</h4>
-          <img className={faqOpen.includes('6') ? 'faq-element-title-arrow-open' : 'faq-element-title-arrow-close'} src='/arrow.svg' alt='arrow' />
+          <img className={faqOpen.includes('6') ? 'faq-element-title-arrow-open' : 'faq-element-title-arrow-close'} src={getAssetPath('/arrow.svg')} alt='arrow' />
         </div>
         {faqOpen.includes('6') && (
           <span className="text-m">

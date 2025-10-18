@@ -9,6 +9,7 @@ import { FAQ } from './layouts/FAQ';
 import { Disclaimer } from './layouts/disclaimer';
 import { Footer } from './layouts/footer';
 import { Button, Modal } from '@mui/material';
+import { getAssetPath } from './utils/assets';
 
 function App() {
   const [openSuccessModal, setOpenSuccessModal] = useState<boolean>(false);
@@ -32,8 +33,8 @@ function App() {
       <Modal open={openSuccessModal} onClose={() => setOpenSuccessModal(false)}>
         <div className='modal'>
           <div className='modal-top'>
-            <img src='/success-modal.svg' alt='success-modal' />
-            <img className='modal-top-close' src='/modal-close.svg' alt='modal-close' onClick={() => setOpenSuccessModal(false)}/>
+            <img src={getAssetPath('/success-modal.svg')} alt='success-modal' />
+            <img className='modal-top-close' src={getAssetPath('/modal-close.svg')} alt='modal-close' onClick={() => setOpenSuccessModal(false)}/>
           </div>
 
           <h3>Wallet connected successfully</h3>
@@ -54,8 +55,8 @@ function App() {
       <Modal open={openFailedModal} onClose={() => setOpenFailedModal(false)}>
         <div className='modal'>
           <div className='modal-top'>
-            <img src='/failed-modal.svg' alt='failed-modal' />
-            <img className='modal-top-close' src='/modal-close.svg' alt='modal-close' onClick={() => setOpenFailedModal(false)} />
+            <img src={getAssetPath('/failed-modal.svg')} alt='failed-modal' />
+            <img className='modal-top-close' src={getAssetPath('/modal-close.svg')} alt='modal-close' onClick={() => setOpenFailedModal(false)} />
           </div>
 
           <h3>Connection failed</h3>
@@ -75,8 +76,8 @@ function App() {
       <Modal open={openConnectingModal} onClose={() => setOpenConnectingModal(false)}>
         <div className='modal'>
           <div className='modal-top'>
-            <img src='/connecting-modal.svg' alt='connecting-modal' />
-            <img className='modal-top-close' src='/modal-close.svg' alt='modal-close' onClick={() => setOpenConnectingModal(false)} />
+            <img src={getAssetPath('/connecting-modal.svg')} alt='connecting-modal' />
+            <img className='modal-top-close' src={getAssetPath('/modal-close.svg')} alt='modal-close' onClick={() => setOpenConnectingModal(false)} />
           </div>
 
           <h3>Connecting wallet…</h3>

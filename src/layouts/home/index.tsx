@@ -1,11 +1,12 @@
 import { Button } from "@mui/material"
 import './style.css'
+import { getAssetPath } from '../../utils/assets'
 
 export const Home = () => {
   return (
     <div className='home'>
       <div className='home-img'>
-        <img src='/home-img.png' alt='home' />
+        <img src={getAssetPath('/home-img.png')} alt='home' />
       </div>
       <div className='home-content'>
         <h4>Partial <span className='home-content-title-highlight'>refund of losses</span> for Binance Futures users</h4>

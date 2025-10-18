@@ -1,5 +1,6 @@
 import { Button } from "@mui/material"
 import './style.css'
+import { getAssetPath } from '../../utils/assets'
 
 export const Header = () => {
 
@@ -10,7 +11,7 @@ export const Header = () => {
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} 
           className='header-navigation-element header-navigation-element-logo'
         >
-          <img src='/logo.svg' alt='logo' />
+          <img src={getAssetPath('/logo.svg')} alt='logo' />
         </div>
 
         <div 
