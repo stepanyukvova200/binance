@@ -1,0 +1,17 @@
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  
+  .footer-divider {
+    width: 100%;
+    height: 1px;
+    background-color: #EDEDED;
+    margin-bottom: 16px;
+  }
+
+  .text-s {
+    font-weight: 400 !important;
+    color: var(--text-secondary-color);
+  }
+}

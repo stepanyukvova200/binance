@@ -1,0 +1,34 @@
+.how-it-work {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 73px;
+
+  .how-it-work-steps {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+
+    .how-it-work-step {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+
+      img {
+        height: 48px;
+        width: 48px;
+        margin-bottom: 12px;
+      }
+
+      h4 {
+        margin-bottom: 12px;
+      }
+
+      .text-m {
+        color: var(--text-secondary-color);
+        font-weight: 400 !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,130 @@
+.security-transparency {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 112px;
+
+  &.correct {
+    margin-bottom: 61px;
+  }
+
+  &.incorrect {
+    margin-bottom: 65px;
+  }
+
+  img {
+    position: absolute;
+    top: -39px;
+    right: 51px;
+  }
+
+  h2 {
+    margin-bottom: 16px;
+  }
+
+  .security-transparency-content-1 {
+    margin-bottom: 8px;
+    color: var(--text-secondary-color) !important;
+    font-weight: 400 !important;
+  }
+
+  .security-transparency-content-2 {
+    margin-bottom: 48px;
+    color: var(--text-secondary-color) !important;
+    font-weight: 400 !important;
+  }
+
+  h4 {
+    margin-bottom: 8px;
+  }
+
+  .security-transparency-content-3 {
+    margin-bottom: 16px;
+    font-weight: 400 !important;
+  }
+
+  .security-transparency-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+
+    .security-transparency-form-input {
+      width: 362px !important;
+      height: 48px !important;
+      padding: 12px !important;
+      border: 1px solid #BFBFBF !important;
+      border-radius: 4px !important;
+      font-family: 'IBM Plex Sans', system-ui, Avenir, Helvetica, Arial, sans-serif !important;
+      font-size: 16px !important;
+      font-weight: 400 !important;
+      line-height: 20px !important;
+
+      input {
+        &::placeholder {
+          color: var(--text-secondary-color) !important;
+          opacity: 1 !important;
+        }
+      }
+    }
+
+    .security-transparency-form-button {
+      height: 48px !important;
+      padding: 0 12px !important;
+      font-size: 16px !important;
+      font-weight: 500 !important;
+      line-height: 20px !important;
+    }
+  }
+
+  .security-transparency-result {
+    display: flex;
+    flex-direction: column;
+    
+    .security-transparency-result-field {
+      display: flex;
+      width: 490px;
+      flex-direction: row;
+      padding: 8px 12px;
+      margin-top: 8px;
+
+      img {
+        position: static;
+        margin-right: 8px;
+      }
+      
+      &.correct {
+        background-color: #EDF7EC;
+        span {
+          color: #42AD3F;
+        }
+      }
+
+      &.incorrect {
+        background-color: #FBE3E3;
+        span {
+          color: #E24343;
+        }
+      }
+    }
+
+    .text-m {
+      margin-top: 16px;
+    }
+
+    .text-highlight-color {
+      color: var(--text-highlight-color);
+    }
+
+    .security-transparency-result-button {
+      width: fit-content !important;
+      margin-top: 12px;
+      height: 48px !important;
+      padding: 0 12px !important;
+      font-size: 16px !important;
+      font-weight: 500 !important;
+      line-height: 20px !important;
+    }
+  }
+}

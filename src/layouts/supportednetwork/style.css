@@ -1,0 +1,75 @@
+.supported-network {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 89px;
+
+  h2 {
+    margin-bottom: 16px;
+  }
+
+  .text-m {
+    margin-bottom: 32px;
+    color: var(--text-secondary-color);
+    font-weight: 400 !important;
+  }
+
+  .supported-network-list {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+
+  .supported-network-program-duration {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 142px;
+    padding-left: 32px;
+    padding-right: 64px;
+
+    .supported-network-program-duration-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    .supported-network-program-duration-icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 24px;
+    }
+
+    .supported-network-program-duration-content {
+      display: flex;
+      flex-direction: column;
+      margin-right: auto;
+      
+      h4 {
+        margin-bottom: 8px;
+      }
+
+      .text-m {
+        margin-bottom: 0;
+      }
+
+      .supported-network-program-duration-content-highlight {
+        color: var(--text-highlight-color);
+      }
+    }
+
+    .supported-network-program-duration-button {
+      height: 52px !important;
+      padding: 0 37.5px !important;
+      font-size: 16px !important;
+      font-weight: 500 !important;
+      line-height: 20px !important;
+    }
+  }
+}

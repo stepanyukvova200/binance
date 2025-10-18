@@ -1,0 +1,70 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+
+  padding-top: calc(64px + 53px);
+  margin-bottom: 42px;
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 1200px;
+    height: 100%;
+  }
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 390px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  background-color: #F7F7F7;
+  border-radius: 4px;
+  padding: 32px;
+  border: none;
+
+  .modal-top {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 16px;
+
+    .modal-top-close {
+      cursor: pointer;
+    }
+  }
+
+  h3 {
+    margin-bottom: 12px;
+  }
+
+  .text-m {
+    color: #707A8A;
+    font-weight: 400 !important;
+  }
+
+  .modal-content-text-1 {
+    margin-bottom: 8px;
+  }
+
+  .modal-content-text-2 {
+    margin-bottom: 16px;
+  }
+
+  .modal-content-button {
+    height: 44px !important;
+    width: 100%;
+  }
+}

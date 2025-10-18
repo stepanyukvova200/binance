@@ -1,0 +1,151 @@
+/* IBM Plex Sans Font Faces */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  src: url('/fonts/IBMPlexSans-VariableFont_wdth,wght.ttf') format('truetype-variations');
+  font-weight: 100 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IBM Plex Sans';
+  src: url('/fonts/IBMPlexSans-Italic-VariableFont_wdth,wght.ttf') format('truetype-variations');
+  font-weight: 100 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Static font faces for better browser support */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  src: url('/fonts/static/IBMPlexSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IBM Plex Sans';
+  src: url('/fonts/static/IBMPlexSans-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IBM Plex Sans';
+  src: url('/fonts/static/IBMPlexSans-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IBM Plex Sans';
+  src: url('/fonts/static/IBMPlexSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  font-family: 'IBM Plex Sans', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background-color: #FFFFFF;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  --text-main-color: #1E2329;
+  --text-secondary-color: #707A8A;
+  --text-highlight-color: #D89F00;
+  --text-yellow-color: #FCD535;
+}
+
+.text-s {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0;
+  color: var(--text-main-color);
+}
+
+.text-m {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0;
+  color: var(--text-main-color);
+}
+
+h1 {
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 115%;
+  letter-spacing: 0;
+  color: var(--text-main-color);
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 115%;
+  letter-spacing: 0;
+  color: var(--text-main-color);
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 115%;
+  letter-spacing: 0;
+  color: var(--text-main-color);
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 110%;
+  letter-spacing: 0;
+  color: var(--text-main-color);
+}
+
+.MuiButtonBase-root {
+  font-family: 'IBM Plex Sans', system-ui, Avenir, Helvetica, Arial, sans-serif !important;
+  border-radius: 4px !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-transform: none !important;
+  letter-spacing: 0 !important;
+}
+
+.button-secondary {
+  background-color: #EDEDED !important;
+  color: var(--text-main-color) !important;
+}
+
+.button-primary {
+  background-color: #FCD535 !important;
+  color: var(--text-main-color) !important;
+}
