@@ -26,7 +26,7 @@ export const SecurityTransparency = () => {
     }
   }
   return (
-    <div className='security-transparency'>
+    <div className='security-transparency' id="security-transparency">
       <h2>Security & Transparency</h2>
       <span className='text-m security-transparency-content-1'>
         All payouts are processed through verified smart contracts audited by <br/> 
