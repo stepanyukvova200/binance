@@ -98,7 +98,10 @@ export const Header = () => {
 
             <div
               className='text-s header-navigation-element'
-              onClick={() => window.scrollTo({ top: (document.getElementById('security-transparency')?.offsetTop || 0) - 64, behavior: 'smooth' })}
+              onClick={() => {
+                setMenuOpen(false)
+                window.scrollTo({ top: (document.getElementById('security-transparency')?.offsetTop || 0) - 64, behavior: 'smooth' })
+              }}
             >
               Check Eligibility
             </div>
