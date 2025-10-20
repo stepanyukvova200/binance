@@ -43,6 +43,22 @@
   padding: 32px;
   border: none;
 
+  &.modal-network-selection {
+    background-color: #FFFFFF;
+  }
+
+  &:focus-visible {
+    outline: none;
+    box-shadow: none;
+    border: none;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+  }
+
   @media (max-width: 1200px) {
     width: 343px;
     padding: 24px;
@@ -63,6 +79,11 @@
     .modal-top-close {
       cursor: pointer;
     }
+
+    .modal-top-close-icon {
+      cursor: pointer;
+      margin-left: auto;
+    }
   }
 
   h3 {
@@ -76,6 +97,12 @@
   .text-m {
     color: #707A8A;
     font-weight: 400 !important;
+
+    @media (max-width: 1200px) {
+      br {
+        display: none;
+      }
+    }
   }
 
   .modal-content-text-1 {
@@ -100,6 +127,35 @@
 
     @media (max-width: 1200px) {
       height: 40px !important;
+    }
+  }
+
+  .supported-network-list {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 16px;
+
+    @media (max-width: 1200px) {
+      gap: 10px;
+    }
+
+    .supported-network-list-mobile-item {
+      position: relative;
+      display: flex;
+      flex: 1;
+      cursor: pointer;
+
+      img {
+        width: 100%;
+      }
+
+      h4 {
+        position: absolute;
+        left: 24px;
+        top: 24px;
+        right: 24px;
+      }
     }
   }
 }

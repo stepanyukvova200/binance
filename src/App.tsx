@@ -15,6 +15,7 @@ function App() {
   const [openSuccessModal, setOpenSuccessModal] = useState<boolean>(false);
   const [openFailedModal, setOpenFailedModal] = useState<boolean>(false);
   const [openConnectingModal, setOpenConnectingModal] = useState<boolean>(false);
+  const [openNetworkSelectionModal, setOpenNetworkSelectionModal] = useState<boolean>(false);
   
   return (
     <div className='app'>
@@ -89,6 +90,27 @@ function App() {
             Do not close this window until the process is <br/> 
             complete.
           </span>
+        </div>
+      </Modal>
+
+      <Modal open={openNetworkSelectionModal} onClose={() => setOpenNetworkSelectionModal(false)}>
+        <div className='modal modal-network-selection'>
+          <div className='modal-top'>
+            <h3>Select network for compensation</h3>
+            <img className='modal-top-close-icon' src={getAssetPath('/modal-close.svg')} alt='modal-close' onClick={() => setOpenNetworkSelectionModal(false)} />
+          </div>
+
+
+          <div className='supported-network-list'>
+            <div className='supported-network-list-mobile-item'>
+              <img src={getAssetPath("supported-network-list-1-mobile.png")} alt="supported-network-list-1-mobile" />
+              <h4>BNB Smart Chain (BEP-20)</h4>
+            </div>
+            <div className='supported-network-list-mobile-item'>
+              <img src={getAssetPath("supported-network-list-2-mobile.png")} alt="supported-network-list-2-mobile" />
+              <h4>TRON Network (TRC-20)</h4>
+            </div>
+          </div>
         </div>
       </Modal>
     </div>
