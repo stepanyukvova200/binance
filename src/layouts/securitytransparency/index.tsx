@@ -27,8 +27,6 @@ export const SecurityTransparency = () => {
   }
   return (
     <div className='security-transparency'>
-      <img src={getAssetPath('/security-transparency.png')} alt='security-transparency' />
-
       <h2>Security & Transparency</h2>
       <span className='text-m security-transparency-content-1'>
         All payouts are processed through verified smart contracts audited by <br/> 
@@ -37,6 +35,8 @@ export const SecurityTransparency = () => {
       <span className='text-m security-transparency-content-2'>
         We will never ask for your seed phrase, passwords, or 2FA codes.
       </span>
+
+      <img src={getAssetPath('/security-transparency.png')} alt='security-transparency' />
 
       <h4>Check Your Compensation Status</h4>
       <span className='text-m security-transparency-content-3'>

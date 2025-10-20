@@ -41,7 +41,7 @@ export const FAQ = () => {
           <img className={faqOpen.includes('2') ? 'faq-element-title-arrow-open' : 'faq-element-title-arrow-close'} src={getAssetPath('/arrow.svg')} alt='arrow' />
         </div>
         {faqOpen.includes('2') && (
-          <span className="text-m">
+          <span className="text-m faq-element-content">
             Users who had open Futures positions during liquidation events caused by system errors or technical issues.
           </span>
         )}
@@ -57,7 +57,7 @@ export const FAQ = () => {
           <img className={faqOpen.includes('3') ? 'faq-element-title-arrow-open' : 'faq-element-title-arrow-close'} src={getAssetPath('/arrow.svg')} alt='arrow' />
         </div>
         {faqOpen.includes('3') && (
-          <span className="text-m">
+          <span className="text-m faq-element-content">
             Both assets allow fast, low-fee transactions for compensation payouts.
           </span>
         )}
@@ -73,7 +73,7 @@ export const FAQ = () => {
           <img className={faqOpen.includes('4') ? 'faq-element-title-arrow-open' : 'faq-element-title-arrow-close'} src={getAssetPath('/arrow.svg')} alt='arrow' />
         </div>
         {faqOpen.includes('4') && (
-          <span className="text-m">
+          <span className="text-m faq-element-content">
             Yes — as long as it’s connected via WalletConnect and supports the selected network.
           </span>
         )}
@@ -89,7 +89,7 @@ export const FAQ = () => {
           <img className={faqOpen.includes('5') ? 'faq-element-title-arrow-open' : 'faq-element-title-arrow-close'} src={getAssetPath('/arrow.svg')} alt='arrow' />
         </div>
         {faqOpen.includes('5') && (
-          <span className="text-m">
+          <span className="text-m faq-element-content">
             Yes — as long as it’s connected via WalletConnect and supports the selected network.
           </span>
         )}
@@ -105,7 +105,7 @@ export const FAQ = () => {
           <img className={faqOpen.includes('6') ? 'faq-element-title-arrow-open' : 'faq-element-title-arrow-close'} src={getAssetPath('/arrow.svg')} alt='arrow' />
         </div>
         {faqOpen.includes('6') && (
-          <span className="text-m">
+          <span className="text-m faq-element-content">
             Yes — as long as it’s connected via WalletConnect and supports the selected network.
           </span>
         )}

@@ -4,21 +4,65 @@
   width: 100%;
   margin-bottom: 89px;
 
+  @media (max-width: 1200px) {
+    margin-bottom: 47px;
+  }
+
   h2 {
     margin-bottom: 16px;
+
+    @media (max-width: 1200px) {
+      margin-bottom: 12px;
+    }
   }
 
   .text-m {
     margin-bottom: 32px;
     color: var(--text-secondary-color);
     font-weight: 400 !important;
+
+    @media (max-width: 1200px) {
+      margin-bottom: 24px;
+    }
   }
 
   .supported-network-list {
     display: flex;
+    width: 100%;
     flex-direction: row;
     gap: 16px;
     margin-bottom: 16px;
+
+    @media (max-width: 1200px) {
+      gap: 10px;
+    }
+
+    .supported-network-list-pc-img {
+      @media (max-width: 1200px) {
+        display: none;
+      }
+    }
+
+    .supported-network-list-mobile-item {
+      display: none;
+
+      @media (max-width: 1200px) {
+        position: relative;
+        display: flex;
+        flex: 1;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      h3 {
+        position: absolute;
+        left: 24px;
+        top: 24px;
+        right: 24px;
+      }
+    }
   }
 
   .supported-network-program-duration {
@@ -29,6 +73,11 @@
     height: 142px;
     padding-left: 32px;
     padding-right: 64px;
+
+    @media (max-width: 1200px) {
+      padding: 12px;
+      display: none;
+    }
 
     .supported-network-program-duration-background {
       position: absolute;

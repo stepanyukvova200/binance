@@ -9,27 +9,75 @@
   padding: 32px;
   margin-bottom: 51px;
 
-  .disclaimer-background {
+  @media (max-width: 1200px) {
+    margin-bottom: 47px;
+    padding: 24px;
+    height: fit-content;
+    flex-direction: column-reverse;
+    background-color: #F7F7F7;
+  }
+
+  .disclaimer-background-pc {
     position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
+
+    @media (max-width: 1200px) {
+      display: none;
+    }
+  }
+
+  .disclaimer-background-mobile {
+    display: none;
+
+    @media (max-width: 1200px) {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 0;
+    }
   }
 
   .disclaimer-content {
     display: flex;
     flex-direction: column;
+    z-index: 2;
 
     h2 {
       margin-bottom: 16px;
+
+      @media (max-width: 1200px) {
+        margin-bottom: 12px;
+      }
     }
 
     .text-m {
       color: var(--text-secondary-color);
+
+      @media (max-width: 1200px) {
+        br {
+          display: none;
+        }
+      }
     }
 
     .disclaimer-content-text {
       margin-bottom: 8px;
+
+      @media (max-width: 1200px) {
+        margin-bottom: 6px;
+      }
+    }
+  }
+
+  .disclaimer-logo {
+    @media (max-width: 1200px) {
+      width: 100%;
+      margin-bottom: 16px;
+      z-index: 2;
     }
   }
 }

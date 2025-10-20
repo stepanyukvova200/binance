@@ -4,7 +4,9 @@ import { getAssetPath } from '../../utils/assets'
 export const Disclaimer = () => {
   return (
     <div className='disclaimer'>
-      <img className='disclaimer-background' src={getAssetPath('/disclaimer-background.png')} alt='disclaimer-background' />
+      <img className='disclaimer-background-pc' src={getAssetPath('/disclaimer-background.png')} alt='disclaimer-background' />
+      <img className='disclaimer-background-mobile' src={getAssetPath('/disclaimer-background-mobile.png')} alt='disclaimer-background' />
+
       <div className='disclaimer-content'>
         <h2>Disclaimer</h2>
         <span className='text-m disclaimer-content-text'>

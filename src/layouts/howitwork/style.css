@@ -5,24 +5,45 @@
   gap: 32px;
   margin-bottom: 73px;
 
+  @media (max-width: 1200px) {
+    gap: 24px;
+  }
+
   .how-it-work-steps {
     display: flex;
     flex-direction: row;
     gap: 16px;
+
+    @media (max-width: 1200px) {
+      flex-direction: column;
+      gap: 24px;
+    }
 
     .how-it-work-step {
       display: flex;
       flex: 1;
       flex-direction: column;
 
+      @media (max-width: 1200px) {
+        flex: unset;
+      }
+
       img {
         height: 48px;
         width: 48px;
         margin-bottom: 12px;
+
+        @media (max-width: 1200px) {
+          margin-bottom: 10px;
+        }
       }
 
       h4 {
         margin-bottom: 12px;
+
+        @media (max-width: 1200px) {
+          margin-bottom: 10px;
+        }
       }
 
       .text-m {

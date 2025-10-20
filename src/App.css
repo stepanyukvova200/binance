@@ -9,6 +9,11 @@
   padding-top: calc(64px + 53px);
   margin-bottom: 42px;
 
+  @media (max-width: 1200px) {
+    padding-top: calc(64px + 27px);
+    margin-bottom: 16px;
+  }
+
   .main {
     display: flex;
     flex-direction: column;
@@ -16,6 +21,11 @@
 
     width: 1200px;
     height: 100%;
+
+    @media (max-width: 1200px) {
+      width: 100%;
+      padding: 0 16px;
+    }
   }
 }
 
@@ -33,6 +43,11 @@
   padding: 32px;
   border: none;
 
+  @media (max-width: 1200px) {
+    width: 343px;
+    padding: 24px;
+  }
+
   .modal-top {
     display: flex;
     width: 100%;
@@ -41,6 +56,10 @@
     justify-content: space-between;
     margin-bottom: 16px;
 
+    @media (max-width: 1200px) {
+      margin-bottom: 12px;
+    }
+
     .modal-top-close {
       cursor: pointer;
     }
@@ -48,6 +67,10 @@
 
   h3 {
     margin-bottom: 12px;
+
+    @media (max-width: 1200px) {
+      margin-bottom: 10px;
+    }
   }
 
   .text-m {
@@ -57,14 +80,26 @@
 
   .modal-content-text-1 {
     margin-bottom: 8px;
+
+    @media (max-width: 1200px) {
+      margin-bottom: 6px;
+    }
   }
 
   .modal-content-text-2 {
     margin-bottom: 16px;
+
+    @media (max-width: 1200px) {
+      margin-bottom: 12px;
+    }
   }
 
   .modal-content-button {
     height: 44px !important;
     width: 100%;
+
+    @media (max-width: 1200px) {
+      height: 40px !important;
+    }
   }
 }

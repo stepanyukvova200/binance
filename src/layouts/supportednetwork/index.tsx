@@ -10,8 +10,17 @@ export const SupportedNetworks = () => {
         Connect your wallet via WalletConnect to securely receive your payment.
       </span>
       <div className='supported-network-list'>
-        <img src={getAssetPath('/supported-network-list-1.png')} alt='supported-network-list-1' />
-        <img src={getAssetPath('/supported-network-list-2.png')} alt='supported-network-list-2' />
+        <img className='supported-network-list-pc-img' src={getAssetPath('/supported-network-list-1.png')} alt='supported-network-list-1' />
+        <img className='supported-network-list-pc-img' src={getAssetPath('/supported-network-list-2.png')} alt='supported-network-list-2' />
+        <div className='supported-network-list-mobile-item'>
+          <img src={getAssetPath("supported-network-list-1-mobile.png")} alt="supported-network-list-1-mobile" />
+          <h3>BNB Smart Chain (BEP-20)</h3>
+        </div>
+        <div className='supported-network-list-mobile-item'>
+          <img src={getAssetPath("supported-network-list-2-mobile.png")} alt="supported-network-list-2-mobile" />
+          <h3>TRON Network (TRC-20)</h3>
+        </div>
+
       </div>
 
       <div className="supported-network-program-duration">
