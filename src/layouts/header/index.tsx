@@ -28,13 +28,6 @@ export const Header = () => {
           Help Center
         </div>
 
-        <div
-          className='text-s header-navigation-element'
-          onClick={() => window.scrollTo({ top: (document.getElementById('security-transparency')?.offsetTop || 0) - 64, behavior: 'smooth' })}
-        >
-          Check Eligibility
-        </div>
-
         <div 
           className='text-s header-navigation-element'
           onClick={() => window.scrollTo({ top: (document.getElementById('faq')?.offsetTop || 0) - 64, behavior: 'smooth' })}
@@ -48,6 +41,10 @@ export const Header = () => {
       </div>
 
       <div className='header-actions'>
+        <Button className='header-actions-element button-secondary'>
+          Check Eligibility
+        </Button>
+
         <Button className='header-actions-element button-primary'>
           Connect Wallet
         </Button>
@@ -101,6 +98,13 @@ export const Header = () => {
 
             <div
               className='text-s header-navigation-element'
+              onClick={() => window.scrollTo({ top: (document.getElementById('security-transparency')?.offsetTop || 0) - 64, behavior: 'smooth' })}
+            >
+              Check Eligibility
+            </div>
+
+            <div
+              className='text-s header-navigation-element'
               onClick={() => {
                 setMenuOpen(false)
                 window.scrollTo({ top: (document.getElementById('faq')?.offsetTop || 0) - 64, behavior: 'smooth' })
@@ -112,10 +116,6 @@ export const Header = () => {
             <div className='text-s header-navigation-element'>
               Contact Support
             </div>
-
-            <Button className='header-actions-element button-secondary'>
-              Check Eligibility
-            </Button>
           </div>
         </div>
       </Modal>
