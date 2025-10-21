@@ -41,7 +41,10 @@ export const Header = () => {
       </div>
 
       <div className='header-actions'>
-        <Button className='header-actions-element button-secondary'>
+        <Button 
+          className='header-actions-element button-secondary'
+          onClick={() => window.scrollTo({ top: (document.getElementById('security-transparency')?.offsetTop || 0) - 64, behavior: 'smooth' })}
+        >
           Check Eligibility
         </Button>
 
